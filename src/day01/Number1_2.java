@@ -5,13 +5,15 @@ import java.util.Map;
 
 public class Number1_2 {
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer , Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++){
-            if(map.containsKey(target - nums[i])){
-                return new int[]{map.get(target - nums[i]),i};
+        Map<Integer, Integer> indexByValue = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            Integer previousIndex = indexByValue.get(complement);
+            if (previousIndex != null) {
+                return new int[] {previousIndex, i};
             }
-            map.put(nums[i], i);
+            indexByValue.put(nums[i], i);
         }
-        return new int[0];
+        throw new IllegalArgumentException("No solution");
     }
 }
