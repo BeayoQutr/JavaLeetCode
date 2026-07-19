@@ -38,6 +38,6 @@
 
 建议从 [`180 天系统刷题路线`](./LEETCODE_ROADMAP_180_DAYS.md) 开始使用本仓库。
 
-# 作者
+## 作者
 - 岁年
 - BeayoQutr
