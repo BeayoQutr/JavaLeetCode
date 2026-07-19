@@ -17,7 +17,7 @@
 ├── LEETCODE_ROADMAP_180_DAYS.md
 └── src/
     └── dayXX/
-        └── Number<题号>_<解法编号>.java
+        └── Number<题号>_Solution<解法编号>.java
 ```
 
 - [`LEETCODE_ROADMAP_180_DAYS.md`](./LEETCODE_ROADMAP_180_DAYS.md)：完整的 180 天训练路线与每日题单。
@@ -35,10 +35,9 @@
 - JDK 17 或更高兼容版本
 - 任意支持 Java 的 IDE 或编辑器
 
-以 Day 01 的代码为例，可在项目根目录编译：
-
-```bash
-javac -encoding UTF-8 -d out src/day01/Number1_1.java
-```
 
 建议从 [`180 天系统刷题路线`](./LEETCODE_ROADMAP_180_DAYS.md) 开始使用本仓库。
+
+# 作者
+- 岁年
+- BeayoQutr
