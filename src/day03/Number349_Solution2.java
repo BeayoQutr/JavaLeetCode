@@ -10,7 +10,7 @@ public class Number349_Solution2 {
         int index = 0;
         int index1 = 0;
         int index2 = 0;
-        while (index1 < (nums1.length - 1) && index2 < (nums2.length - 1)){
+        while (index1 < nums1.length && index2 < nums2.length){
             if(nums1[index1] == nums2[index2]){
                 if (index == 0 || nums1[index1] != result[index - 1]){
                     result[index++] = nums1[index1];
